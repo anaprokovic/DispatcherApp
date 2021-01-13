@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9587A7D2-F903-4118-A9CB-D0A1D6B50B51}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PresentationLayer</RootNamespace>
+    <AssemblyName>PresentationLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection, Version=5.0.0.1, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.5.0.1\lib\net461\Microsoft.Extensions.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=5.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.5.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Delete dispatcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete dispatcher.Designer.cs">
+      <DependentUpon>Delete dispatcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete driver.Designer.cs">
+      <DependentUpon>Delete driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete driving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete driving.Designer.cs">
+      <DependentUpon>Delete driving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatcher%27s drivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dispatcher%27s drivers.Designer.cs">
+      <DependentUpon>Dispatcher%27s drivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatchers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dispatchers.Designer.cs">
+      <DependentUpon>Dispatchers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivers drivings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drivers drivings.Designer.cs">
+      <DependentUpon>Drivers drivings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drivers.Designer.cs">
+      <DependentUpon>Drivers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drivings.Designer.cs">
+      <DependentUpon>Drivings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainMenu.Designer.cs">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New dispatcher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New dispatcher.Designer.cs">
+      <DependentUpon>New dispatcher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New driver.Designer.cs">
+      <DependentUpon>New driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="New driving.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="New driving.Designer.cs">
+      <DependentUpon>New driving.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Update dispatcher%27s info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update dispatcher%27s info.Designer.cs">
+      <DependentUpon>Update dispatcher%27s info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update driver.Designer.cs">
+      <DependentUpon>Update driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Update driving%27s info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Update driving%27s info.Designer.cs">
+      <DependentUpon>Update driving%27s info.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Delete dispatcher.resx">
+      <DependentUpon>Delete dispatcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete driver.resx">
+      <DependentUpon>Delete driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete driving.resx">
+      <DependentUpon>Delete driving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispatcher%27s drivers.resx">
+      <DependentUpon>Dispatcher%27s drivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispatchers.resx">
+      <DependentUpon>Dispatchers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers drivings.resx">
+      <DependentUpon>Drivers drivings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers.resx">
+      <DependentUpon>Drivers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivings.resx">
+      <DependentUpon>Drivings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainMenu.resx">
+      <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New dispatcher.resx">
+      <DependentUpon>New dispatcher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New driver.resx">
+      <DependentUpon>New driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="New driving.resx">
+      <DependentUpon>New driving.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Update dispatcher%27s info.resx">
+      <DependentUpon>Update dispatcher%27s info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update driver.resx">
+      <DependentUpon>Update driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Update driving%27s info.resx">
+      <DependentUpon>Update driving%27s info.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj">
+      <Project>{b7145274-897b-4f13-b5b5-49473d8aad59}</Project>
+      <Name>BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataLayer\DataLayer.csproj">
+      <Project>{41169623-36ec-404d-b730-eb502012b106}</Project>
+      <Name>DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{3e592271-4828-481f-a4e9-87ba146e96c7}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mainMenuBackground.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
