@@ -1,0 +1,26 @@
+CREATE TABLE [dbo].[Dispatcher] (
+    [Id]      INT           IDENTITY (1, 1) NOT NULL,
+    [Name]    NVARCHAR (50) NOT NULL,
+    [Surname] NVARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+
+CREATE TABLE [dbo].[Driver] (
+    [Id]           INT           IDENTITY (1, 1) NOT NULL,
+    [Name]         NVARCHAR (50) NOT NULL,
+    [Surname]      NVARCHAR (50) NOT NULL,
+    [PhoneNumber]  NVARCHAR (20) NOT NULL,
+    [DispatcherID] INT           NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
+
+CREATE TABLE [dbo].[Driving] (
+    [Id]                INT          IDENTITY (1, 1) NOT NULL,
+    [Mileage]           INT          NOT NULL,
+    [PricePerKM]        DECIMAL (18) NOT NULL,
+    [TotalEarning]      DECIMAL (18) NOT NULL,
+    [DispatcherEarning] DECIMAL (18) NOT NULL,
+    [DriverID]          INT          NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id] ASC)
+);
